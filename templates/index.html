@@ -24,6 +24,7 @@
   </div>
 </header>
 <!-- Main Content-->
+
 <main>
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -32,10 +33,10 @@
         <p class="lead">A work in progress.</p>
       </div>
       <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                 <img src="/static/assets/img/blog.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-
+        <a href="{{url_for('quizzler')}}">
+          <img src="/static/assets/img/blog.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+        </a>
       </div>
-
     </div>
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
@@ -43,8 +44,9 @@
         <p class="lead">See my fancy charts and graphs.</p>
       </div>
       <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                 <img src="/static/assets/img/sunburst.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-
+        <a href="{{url_for('nobel')}}">
+          <img src="/static/assets/img/sunburst.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+        </a>
       </div>
     </div>
   </div>
@@ -56,8 +58,9 @@
         <p class="lead">See how handwashing saves lives.</p>
       </div>
       <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                 <img src="/static/assets/img/hand wash.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-
+        <a href="{{url_for('hand_washing')}}">
+          <img src="/static/assets/img/hand wash.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+        </a>
       </div>
     </div>
     <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -66,12 +69,12 @@
         <p class="lead">Save the turtle.</p>
       </div>
       <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                 <img src="/static/assets/img/turtle crossing.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-
+        <a href="{{url_for('turtle')}}">
+          <img src="/static/assets/img/turtle crossing.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+        </a>
       </div>
     </div>
   </div>
-
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
