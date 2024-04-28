@@ -1,0 +1,126 @@
+{% include "header.html" %}
+
+<!-- Page Header-->
+<header>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Hi I'm Jack</h1>
+      <h3 class="fw-normal text-muted mb-3">And I'm a software developer</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="{{url_for('about')}}">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block image ">
+ <img src="/static/assets/img/field.jpg" alt="my picture" class="phone">
+    </div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+       <img src="/static/assets/img/vineyard.jpg" alt="my picture" class="phone">
+
+    </div>
+  <img src="/static/assets/img/glacier_self.jpg" alt="my picture" class="avatar">
+  </div>
+</header>
+<!-- Main Content-->
+<main>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">My Blog</h2>
+        <p class="lead">A work in progress.</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                 <img src="/static/assets/img/blog.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+
+      </div>
+
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Data analyst</h2>
+        <p class="lead">See my fancy charts and graphs.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                 <img src="/static/assets/img/sunburst.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Handwashing analysis</h2>
+        <p class="lead">See how handwashing saves lives.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                 <img src="/static/assets/img/hand wash.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+
+      </div>
+    </div>
+    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Turtle Crossing game</h2>
+        <p class="lead">Save the turtle.</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                 <img src="/static/assets/img/turtle crossing.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">My Top 10 Movies</h2>
+        <p class="lead">Come and judge my taste in movies.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+         <img src="/static/assets/img/top movies.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Kanye Quote Machine</h2>
+        <p class="lead">Genius or madman?.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                 <img src="/static/assets/img/kanye.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">US States game</h2>
+        <p class="lead">Harder than you think.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                 <img src="/static/assets/img/us state game.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Snake</h2>
+        <p class="lead">A classic.</p>
+      </div>
+      <a href="{{url_for('snake')}}"> <!-- Link to the /snake route -->
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            <img src="/static/assets/img/snake.png" alt="Snake Game" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+        </div>
+    </a>
+      </div>
+    </div>
+  </div>
+</main>
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}
