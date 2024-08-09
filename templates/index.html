@@ -29,12 +29,12 @@
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">My Blog</h2>
-        <p class="lead">A work in progress.</p>
+        <h2 class="display-5">My Quiz app</h2>
+        <p class="lead">For my love of pub quizzes.</p>
       </div>
       <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
         <a href="{{url_for('quizzler')}}">
-          <img src="/static/assets/img/blog.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+          <img src="/static/assets/img/quizzler.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
         </a>
       </div>
     </div>
@@ -75,53 +75,57 @@
       </div>
     </div>
   </div>
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">My Top 10 Movies</h2>
-        <p class="lead">Come and judge my taste in movies.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-         <img src="/static/assets/img/top movies.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-      </div>
-    </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Kanye Quote Machine</h2>
-        <p class="lead">Genius or madman?.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                 <img src="/static/assets/img/kanye.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-
-      </div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">US States game</h2>
-        <p class="lead">Harder than you think.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                 <img src="/static/assets/img/us state game.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-
-      </div>
-    </div>
-    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Snake</h2>
-        <p class="lead">A classic.</p>
-      </div>
-      <a href="{{url_for('snake')}}"> <!-- Link to the /snake route -->
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            <img src="/static/assets/img/snake.png" alt="Snake Game" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+        <div class="my-3 p-3">
+            <h2 class="display-5">My Top 10 Movies</h2>
+            <p class="lead">Come and judge my taste in movies.</p>
         </div>
-    </a>
-      </div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            <a href="{{ url_for('movies') }}"> <!-- Link to the movies route -->
+                <img src="/static/assets/img/top movies.png" alt="top movies" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+            </a>
+        </div>
     </div>
-  </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Kanye Quote Machine</h2>
+            <p class="lead">Genius or madman?.</p>
+        </div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            <a href="{{ url_for('kanye') }}"> <!-- Link to the kanye route -->
+                <img src="/static/assets/img/kanye.png" alt="Kanye Quote Machine" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">US States game</h2>
+            <p class="lead">Harder than you think.</p>
+        </div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            <a href="{{ url_for('states') }}"> <!-- Link to the states route -->
+                <img src="/static/assets/img/us state game.png" alt="US States game" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+            </a>
+        </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Snake</h2>
+            <p class="lead">A classic.</p>
+        </div>
+        <a href="{{ url_for('snake') }}"> <!-- Link to the snake route -->
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                <img src="/static/assets/img/snake.png" alt="Snake" class="blog pic" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+            </div>
+        </a>
+    </div>
+</div>
 </main>
+
     </div>
   </div>
 </div>

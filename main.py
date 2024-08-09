@@ -197,7 +197,7 @@ def movies():
     movies_dir = 'movies'
     subprocess.run(['python', 'main.py', 'requirements.txt', 'templates/add.html', 'templates/base.html', 'templates/edit.html', 'templates/index.html', 'templates/select.html', 'static/css/styles.css', 'instance/film_list.db'], cwd=movies_dir)
 
-    return render_template("index.html")
+    return render_template("movies_index.html")
 
 @app.route("/kanye")
 def kanye():
